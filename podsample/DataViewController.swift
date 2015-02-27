@@ -33,6 +33,55 @@ class DataViewController: UIViewController {
         }
     }
 
+    @IBAction func onChangeValue(sender: AnyObject) {
+    }
 
+    @IBAction func onClick(sender: AnyObject) {
+        youdao()
+    }
+    func youdao(){
+        let manager = AFHTTPRequestOperationManager()
+        var q="word"
+
+        var url = "http://fanyi.youdao.com/openapi.do?keyfrom=lowbeebdc&key=612340493&type=data&doctype=json&version=1.1&q=" + q
+
+        println(url)
+        let params = [];//["keyfrom": "lowbeebdc", "key": "612340493", "doctype":"json","version":"1.1", "q":q]
+        println(params)
+        
+        manager.GET(url,
+            parameters: params,
+            success: { (operation: AFHTTPRequestOperation!,
+                responseObject: AnyObject!) in
+                println("JSON: " + responseObject.description!)
+                self.dataLabel!.text = ""
+
+            },
+            failure: { (operation: AFHTTPRequestOperation!,
+                error: NSError!) in
+                println("Error: " + error.localizedDescription)
+        })
+
+    }
+    func testAFN(){
+        let manager = AFHTTPRequestOperationManager()
+        let url = "http://api.openweathermap.org/data/2.5/weather"
+        println(url)
+        
+        let params = ["lat": 39.26, "lon": 41.03, "cnt":0]
+        println(params)
+        
+        manager.GET(url,
+            parameters: params,
+            success: { (operation: AFHTTPRequestOperation!,
+                responseObject: AnyObject!) in
+                println("JSON: " + responseObject.description!)
+            },
+            failure: { (operation: AFHTTPRequestOperation!,
+                error: NSError!) in
+                println("Error: " + error.localizedDescription)
+        })
+
+    }
 }
 
