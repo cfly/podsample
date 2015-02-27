@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C109" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Word" representedClassName="Word" syncable="YES">
+        <attribute name="exsample" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phonetic_symbol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="word" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zh_CN" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Youdao" syncable="YES">
+        <attribute name="basic" optional="YES" syncable="YES"/>
+        <attribute name="errorCode" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="query" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="translation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="web" optional="YES" syncable="YES"/>
+        <relationship name="relationshipBasic" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="YoudaoBasic" inverseName="relationshipBasic" inverseEntity="YoudaoBasic" syncable="YES"/>
+        <relationship name="relationshipWeb" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="YoudaoWeb" inverseName="relationshipWeb" inverseEntity="YoudaoWeb" syncable="YES"/>
+    </entity>
+    <entity name="YoudaoBasic" syncable="YES">
+        <attribute name="explains" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phonetic" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uk_phonetic" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="us_phonetic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationshipBasic" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Youdao" inverseName="relationshipBasic" inverseEntity="Youdao" syncable="YES"/>
+    </entity>
+    <entity name="YoudaoWeb" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationshipWeb" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Youdao" inverseName="relationshipWeb" inverseEntity="Youdao" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Word" positionX="-423" positionY="-18" width="128" height="103"/>
+        <element name="Youdao" positionX="-198" positionY="-135" width="128" height="148"/>
+        <element name="YoudaoBasic" positionX="-54" positionY="36" width="128" height="118"/>
+        <element name="YoudaoWeb" positionX="-272" positionY="72" width="128" height="88"/>
+    </elements>
+</model>
