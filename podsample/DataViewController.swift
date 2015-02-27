@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import SwiftyJSON
 
 class DataViewController: UIViewController {
 
@@ -54,7 +55,8 @@ class DataViewController: UIViewController {
             success: { (operation: AFHTTPRequestOperation!,
                 responseObject: AnyObject!) in
                 println("JSON: " + responseObject.description!)
-                self.dataLabel!.text = ""
+                //let json = JSONValue(responseObject)
+                //self.dataLabel!.text = NSJSONSerialization.dataWithJSONObject(responseObject, nil, nil)
 
             },
             failure: { (operation: AFHTTPRequestOperation!,

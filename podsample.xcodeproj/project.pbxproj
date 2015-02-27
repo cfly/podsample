@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6ECA66FDF76D503843BB90D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320D44802551F05D495546A6 /* libPods.a */; };
+		826A1C441AA040B000EAC631 /* libPods-SwiftyJSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 826A1C431AA040B000EAC631 /* libPods-SwiftyJSON.a */; };
+		826A1C461AA040C100EAC631 /* libPods-podsample-SwiftyJSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 826A1C451AA040C100EAC631 /* libPods-podsample-SwiftyJSON.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		8299DDF31A98EDF70085A8BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8299DDF21A98EDF70085A8BA /* AppDelegate.swift */; };
 		8299DDF51A98EDF70085A8BA /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8299DDF41A98EDF70085A8BA /* RootViewController.swift */; };
 		8299DDF71A98EDF70085A8BA /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8299DDF61A98EDF70085A8BA /* DataViewController.swift */; };
@@ -33,6 +35,8 @@
 		320D44802551F05D495546A6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCCBAF39729152810E2691E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8237D8161A9F22B200459BCD /* podsample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "podsample-Bridging-Header.h"; sourceTree = "<group>"; };
+		826A1C431AA040B000EAC631 /* libPods-SwiftyJSON.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-SwiftyJSON.a"; path = "Pods/build/Debug-iphoneos/libPods-SwiftyJSON.a"; sourceTree = "<group>"; };
+		826A1C451AA040C100EAC631 /* libPods-podsample-SwiftyJSON.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-podsample-SwiftyJSON.a"; path = "Pods/build/Debug-iphoneos/libPods-podsample-SwiftyJSON.a"; sourceTree = "<group>"; };
 		8299DDED1A98EDF70085A8BA /* podsample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = podsample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8299DDF11A98EDF70085A8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8299DDF21A98EDF70085A8BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826A1C461AA040C100EAC631 /* libPods-podsample-SwiftyJSON.a in Frameworks */,
+				826A1C441AA040B000EAC631 /* libPods-SwiftyJSON.a in Frameworks */,
 				6ECA66FDF76D503843BB90D2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +145,8 @@
 		E1BE093D92D510440F00F79B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				826A1C451AA040C100EAC631 /* libPods-podsample-SwiftyJSON.a */,
+				826A1C431AA040B000EAC631 /* libPods-SwiftyJSON.a */,
 				320D44802551F05D495546A6 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -411,6 +419,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = podsample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "podsample/podsample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -425,6 +437,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = podsample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "podsample/podsample-Bridging-Header.h";
 			};
