@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import SwiftyJSON
 
 class DataViewController: UIViewController {
 
@@ -38,7 +37,12 @@ class DataViewController: UIViewController {
     }
 
     @IBAction func onClick(sender: AnyObject) {
-        youdao()
+        var shareApp:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        shareApp.saveContext()
+//        youdao()
+        var q="word"
+        YoudaoApi().execute(q)
+        BaiduApi().execute(q)
     }
     func youdao(){
         let manager = AFHTTPRequestOperationManager()
@@ -55,8 +59,11 @@ class DataViewController: UIViewController {
             success: { (operation: AFHTTPRequestOperation!,
                 responseObject: AnyObject!) in
                 println("JSON: " + responseObject.description!)
-                //let json = JSONValue(responseObject)
+                let json = JSON(responseObject)
                 //self.dataLabel!.text = NSJSONSerialization.dataWithJSONObject(responseObject, nil, nil)
+                println(json)
+                let translation = json["translation"][0]
+                self.dataLabel!.text = translation.string
 
             },
             failure: { (operation: AFHTTPRequestOperation!,
