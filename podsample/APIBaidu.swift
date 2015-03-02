@@ -33,40 +33,41 @@ import Foundation
     ]
 }
 */
-class ModuleBaidu{
-    var errorCode:Int = 0;
-    var query:String = "";
-    var translation:String = "";
-    var basic:String = "";
-    var web:String = "";
+class BaiduApi: FetchApi {
+    
+    override func fetch(q:String){
+        let manager = AFHTTPRequestOperationManager()
+        var q="word"
+        //    http://openapi.baidu.com/public/2.0/translate/dict/simple?client_id=YourApiKey&q=do&from=en&to=zh
+        
+        var url = "http://openapi.baidu.com/public/2.0/translate/dict/simple?client_id=wDMwKcp2RCQisj2HpUEfsIcx&from=en&to=zh&q=do" + q
+        
+        println(url)
+        let params = [];//["keyfrom": "lowbeebdc", "key": "612340493", "doctype":"json","version":"1.1", "q":q]
+        println(params)
+        
+        manager.GET(url,
+            parameters: params,
+            success: { (operation: AFHTTPRequestOperation!,
+                responseObject: AnyObject!) in
+                println("JSON: " + responseObject.description!)
+                let json = JSON(responseObject)
+                //self.dataLabel!.text = NSJSONSerialization.dataWithJSONObject(responseObject, nil, nil)
+                println(json)
+                let translation = json["translation"][0]
+                println(translation.string)
+                
+            },
+            failure: { (operation: AFHTTPRequestOperation!,
+                error: NSError!) in
+                println("Error: " + error.localizedDescription)
+        })
+        
+    }
+    override    func save(q:String){
+        
+    }
+    
+    
 }
 
-func youdao(){
-    let manager = AFHTTPRequestOperationManager()
-    var q="word"
-//    http://openapi.baidu.com/public/2.0/translate/dict/simple?client_id=YourApiKey&q=do&from=en&to=zh
-    
-    var url = "http://openapi.baidu.com/public/2.0/translate/dict/simple?client_id=wDMwKcp2RCQisj2HpUEfsIcx&from=en&to=zh&q=do" + q
-    
-    println(url)
-    let params = [];//["keyfrom": "lowbeebdc", "key": "612340493", "doctype":"json","version":"1.1", "q":q]
-    println(params)
-    
-    manager.GET(url,
-        parameters: params,
-        success: { (operation: AFHTTPRequestOperation!,
-            responseObject: AnyObject!) in
-            println("JSON: " + responseObject.description!)
-            let json = JSON(responseObject)
-            //self.dataLabel!.text = NSJSONSerialization.dataWithJSONObject(responseObject, nil, nil)
-            println(json)
-            let translation = json["translation"][0]
-            println(translation.string)
-            
-        },
-        failure: { (operation: AFHTTPRequestOperation!,
-            error: NSError!) in
-            println("Error: " + error.localizedDescription)
-    })
-    
-}
