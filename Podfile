@@ -3,7 +3,7 @@
 
 platform :ios, '8.0'
 pod "AFNetworking", "~> 2.0"
-pod 'SwiftyJSON', '~> 2.1'
+#pod 'SwiftyJSON', '~> 2.1'
 target 'podsample' do
 
 end
