@@ -7,7 +7,7 @@
         <attribute name="translation" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="web" optional="YES" attributeType="Transformable" syncable="YES"/>
         <relationship name="relationshipBasic" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="YoudaoBasic" inverseName="relationshipBasic" inverseEntity="YoudaoBasic" syncable="YES"/>
-        <relationship name="relationshipWeb" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="YoudaoWeb" syncable="YES"/>
+        <relationship name="relationshipWeb" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="YoudaoWeb" inverseName="relationshipWeb" inverseEntity="YoudaoWeb" syncable="YES"/>
     </entity>
     <entity name="YoudaoBasic" representedClassName="YoudaoBasic" syncable="YES">
         <attribute name="explains" optional="YES" attributeType="String" syncable="YES"/>
@@ -19,11 +19,11 @@
     <entity name="YoudaoWeb" representedClassName="YoudaoWeb" syncable="YES">
         <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="relationshipWeb" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Youdao" syncable="YES"/>
+        <relationship name="relationshipWeb" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Youdao" inverseName="relationshipWeb" inverseEntity="Youdao" syncable="YES"/>
     </entity>
     <elements>
         <element name="Youdao" positionX="-225" positionY="-54" width="128" height="148"/>
         <element name="YoudaoBasic" positionX="-54" positionY="36" width="128" height="118"/>
-        <element name="YoudaoWeb" positionX="-441" positionY="65" width="128" height="88"/>
+        <element name="YoudaoWeb" positionX="-567" positionY="29" width="128" height="88"/>
     </elements>
 </model>
