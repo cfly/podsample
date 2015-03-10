@@ -39,6 +39,7 @@ class DataViewController: UIViewController {
     @IBAction func onClick(sender: AnyObject) {
         var shareApp:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         shareApp.saveContext()
+
 //        youdao()
         var q="word"
         YoudaoApi().execute(q)

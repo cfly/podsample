@@ -4,6 +4,7 @@
 platform :ios, '8.0'
 pod "AFNetworking", "~> 2.0"
 #pod 'SwiftyJSON', '~> 2.1'
+#pod "pop", "~> 1.0"
 target 'podsample' do
 
 end

@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6ECA66FDF76D503843BB90D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320D44802551F05D495546A6 /* libPods.a */; };
-		826A1C441AA040B000EAC631 /* libPods-SwiftyJSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 826A1C431AA040B000EAC631 /* libPods-SwiftyJSON.a */; };
-		826A1C461AA040C100EAC631 /* libPods-podsample-SwiftyJSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 826A1C451AA040C100EAC631 /* libPods-podsample-SwiftyJSON.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		8269FF9D1AA071E800992228 /* YoudaoWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8269FF9C1AA071E800992228 /* YoudaoWeb.swift */; };
+		8269FF9F1AA071E900992228 /* Youdao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8269FF9E1AA071E900992228 /* Youdao.swift */; };
+		8269FFA11AA071E900992228 /* YoudaoBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8269FFA01AA071E900992228 /* YoudaoBasic.swift */; };
+		8269FFA31AA0790500992228 /* FetchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8269FFA21AA0790500992228 /* FetchApi.swift */; };
 		8299DDF31A98EDF70085A8BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8299DDF21A98EDF70085A8BA /* AppDelegate.swift */; };
 		8299DDF51A98EDF70085A8BA /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8299DDF41A98EDF70085A8BA /* RootViewController.swift */; };
 		8299DDF71A98EDF70085A8BA /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8299DDF61A98EDF70085A8BA /* DataViewController.swift */; };
@@ -18,6 +19,10 @@
 		8299DDFE1A98EDF70085A8BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8299DDFD1A98EDF70085A8BA /* Images.xcassets */; };
 		8299DE011A98EDF70085A8BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8299DDFF1A98EDF70085A8BA /* LaunchScreen.xib */; };
 		8299DE0D1A98EDF70085A8BA /* podsampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8299DE0C1A98EDF70085A8BA /* podsampleTests.swift */; };
+		829D2F811AA04C25009DC648 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829D2F801AA04C25009DC648 /* SwiftyJSON.swift */; };
+		829D2F831AA05D32009DC648 /* APIYoudao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829D2F821AA05D32009DC648 /* APIYoudao.swift */; };
+		829D2F861AA05F85009DC648 /* Vocabulary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 829D2F841AA05F85009DC648 /* Vocabulary.xcdatamodeld */; };
+		829D2F881AA0668F009DC648 /* APIBaidu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829D2F871AA0668F009DC648 /* APIBaidu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,11 +37,12 @@
 
 /* Begin PBXFileReference section */
 		051ED60CBC4A7CE707766A02 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		320D44802551F05D495546A6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCCBAF39729152810E2691E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8237D8161A9F22B200459BCD /* podsample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "podsample-Bridging-Header.h"; sourceTree = "<group>"; };
-		826A1C431AA040B000EAC631 /* libPods-SwiftyJSON.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-SwiftyJSON.a"; path = "Pods/build/Debug-iphoneos/libPods-SwiftyJSON.a"; sourceTree = "<group>"; };
-		826A1C451AA040C100EAC631 /* libPods-podsample-SwiftyJSON.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-podsample-SwiftyJSON.a"; path = "Pods/build/Debug-iphoneos/libPods-podsample-SwiftyJSON.a"; sourceTree = "<group>"; };
+		8269FF9C1AA071E800992228 /* YoudaoWeb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoudaoWeb.swift; sourceTree = "<group>"; };
+		8269FF9E1AA071E900992228 /* Youdao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Youdao.swift; sourceTree = "<group>"; };
+		8269FFA01AA071E900992228 /* YoudaoBasic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoudaoBasic.swift; sourceTree = "<group>"; };
+		8269FFA21AA0790500992228 /* FetchApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchApi.swift; sourceTree = "<group>"; };
 		8299DDED1A98EDF70085A8BA /* podsample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = podsample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8299DDF11A98EDF70085A8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8299DDF21A98EDF70085A8BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,10 @@
 		8299DE061A98EDF70085A8BA /* podsampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = podsampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8299DE0B1A98EDF70085A8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8299DE0C1A98EDF70085A8BA /* podsampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = podsampleTests.swift; sourceTree = "<group>"; };
+		829D2F801AA04C25009DC648 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		829D2F821AA05D32009DC648 /* APIYoudao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIYoudao.swift; sourceTree = "<group>"; };
+		829D2F851AA05F85009DC648 /* Vocabulary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vocabulary.xcdatamodel; sourceTree = "<group>"; };
+		829D2F871AA0668F009DC648 /* APIBaidu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIBaidu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				826A1C461AA040C100EAC631 /* libPods-podsample-SwiftyJSON.a in Frameworks */,
-				826A1C441AA040B000EAC631 /* libPods-SwiftyJSON.a in Frameworks */,
-				6ECA66FDF76D503843BB90D2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +111,11 @@
 		8299DDEF1A98EDF70085A8BA /* podsample */ = {
 			isa = PBXGroup;
 			children = (
+				829D2F841AA05F85009DC648 /* Vocabulary.xcdatamodeld */,
+				8269FFA01AA071E900992228 /* YoudaoBasic.swift */,
+				8269FF9E1AA071E900992228 /* Youdao.swift */,
+				8269FF9C1AA071E800992228 /* YoudaoWeb.swift */,
+				829D2F801AA04C25009DC648 /* SwiftyJSON.swift */,
 				8299DDF21A98EDF70085A8BA /* AppDelegate.swift */,
 				8299DDF41A98EDF70085A8BA /* RootViewController.swift */,
 				8299DDF61A98EDF70085A8BA /* DataViewController.swift */,
@@ -113,6 +125,9 @@
 				8299DDFF1A98EDF70085A8BA /* LaunchScreen.xib */,
 				8299DDF01A98EDF70085A8BA /* Supporting Files */,
 				8237D8161A9F22B200459BCD /* podsample-Bridging-Header.h */,
+				8269FFA21AA0790500992228 /* FetchApi.swift */,
+				829D2F821AA05D32009DC648 /* APIYoudao.swift */,
+				829D2F871AA0668F009DC648 /* APIBaidu.swift */,
 			);
 			path = podsample;
 			sourceTree = "<group>";
@@ -145,9 +160,6 @@
 		E1BE093D92D510440F00F79B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				826A1C451AA040C100EAC631 /* libPods-podsample-SwiftyJSON.a */,
-				826A1C431AA040B000EAC631 /* libPods-SwiftyJSON.a */,
-				320D44802551F05D495546A6 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -287,10 +299,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8269FF9F1AA071E900992228 /* Youdao.swift in Sources */,
+				829D2F881AA0668F009DC648 /* APIBaidu.swift in Sources */,
 				8299DDF51A98EDF70085A8BA /* RootViewController.swift in Sources */,
 				8299DDF91A98EDF70085A8BA /* ModelController.swift in Sources */,
 				8299DDF71A98EDF70085A8BA /* DataViewController.swift in Sources */,
+				829D2F811AA04C25009DC648 /* SwiftyJSON.swift in Sources */,
+				8269FF9D1AA071E800992228 /* YoudaoWeb.swift in Sources */,
+				829D2F861AA05F85009DC648 /* Vocabulary.xcdatamodeld in Sources */,
 				8299DDF31A98EDF70085A8BA /* AppDelegate.swift in Sources */,
+				8269FFA31AA0790500992228 /* FetchApi.swift in Sources */,
+				8269FFA11AA071E900992228 /* YoudaoBasic.swift in Sources */,
+				829D2F831AA05D32009DC648 /* APIYoudao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +531,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		829D2F841AA05F85009DC648 /* Vocabulary.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				829D2F851AA05F85009DC648 /* Vocabulary.xcdatamodel */,
+			);
+			currentVersion = 829D2F851AA05F85009DC648 /* Vocabulary.xcdatamodel */;
+			path = Vocabulary.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8299DDE51A98EDF70085A8BA /* Project object */;
 }
