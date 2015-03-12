@@ -11,6 +11,7 @@
 		8269FF9F1AA071E900992228 /* Youdao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8269FF9E1AA071E900992228 /* Youdao.swift */; };
 		8269FFA11AA071E900992228 /* YoudaoBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8269FFA01AA071E900992228 /* YoudaoBasic.swift */; };
 		8269FFA31AA0790500992228 /* FetchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8269FFA21AA0790500992228 /* FetchApi.swift */; };
+		8293B1A71AB13FBC00FF0572 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8293B1A61AB13FBC00FF0572 /* Persistence.swift */; };
 		8299DDF31A98EDF70085A8BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8299DDF21A98EDF70085A8BA /* AppDelegate.swift */; };
 		8299DDF51A98EDF70085A8BA /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8299DDF41A98EDF70085A8BA /* RootViewController.swift */; };
 		8299DDF71A98EDF70085A8BA /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8299DDF61A98EDF70085A8BA /* DataViewController.swift */; };
@@ -43,6 +44,7 @@
 		8269FF9E1AA071E900992228 /* Youdao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Youdao.swift; sourceTree = "<group>"; };
 		8269FFA01AA071E900992228 /* YoudaoBasic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoudaoBasic.swift; sourceTree = "<group>"; };
 		8269FFA21AA0790500992228 /* FetchApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchApi.swift; sourceTree = "<group>"; };
+		8293B1A61AB13FBC00FF0572 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		8299DDED1A98EDF70085A8BA /* podsample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = podsample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8299DDF11A98EDF70085A8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8299DDF21A98EDF70085A8BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		8299DDEF1A98EDF70085A8BA /* podsample */ = {
 			isa = PBXGroup;
 			children = (
+				8293B1A61AB13FBC00FF0572 /* Persistence.swift */,
 				829D2F841AA05F85009DC648 /* Vocabulary.xcdatamodeld */,
 				8269FFA01AA071E900992228 /* YoudaoBasic.swift */,
 				8269FF9E1AA071E900992228 /* Youdao.swift */,
@@ -306,6 +309,7 @@
 				8299DDF71A98EDF70085A8BA /* DataViewController.swift in Sources */,
 				829D2F811AA04C25009DC648 /* SwiftyJSON.swift in Sources */,
 				8269FF9D1AA071E800992228 /* YoudaoWeb.swift in Sources */,
+				8293B1A71AB13FBC00FF0572 /* Persistence.swift in Sources */,
 				829D2F861AA05F85009DC648 /* Vocabulary.xcdatamodeld in Sources */,
 				8299DDF31A98EDF70085A8BA /* AppDelegate.swift in Sources */,
 				8269FFA31AA0790500992228 /* FetchApi.swift in Sources */,

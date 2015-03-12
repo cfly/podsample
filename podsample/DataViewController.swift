@@ -37,8 +37,9 @@ class DataViewController: UIViewController {
     }
 
     @IBAction func onClick(sender: AnyObject) {
-        var shareApp:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-        shareApp.saveContext()
+        //var shareApp:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        //shareApp.saveContext()
+        Persistence.sharedPersistence.saveContext()
 
 //        youdao()
         var q="word"
